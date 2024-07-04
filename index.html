@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css link -->
+    <link rel="stylesheet" href="/style.css">
+    <!-- font owesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- inter font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;600;700;800&display=swap" rel="stylesheet">
+    <title>Airthmetic calculater</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main-div">
+            <div class="content">
+                <div class="content-inner">
+                    <form action="">
+                        <h2>First Value :</h2>
+                        <input type="text" id="firstValue" placeholder="First value"><br>
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        <br><br>
+                        <h2>Second Value :</h2>
+                        <!-- <label class="fa-solid fa-dollar-sign" for="secondValue></label> -->
+                        <input type="text" id="secondValue" placeholder="Second value"><br>
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        <br><br>
+                    </form>
+                    <div class="button">
+                        <button onclick="plusPlay()"><i class="fa-solid fa-plus"></i></button>
+                        <button onclick="minusPlay()"><i class="fa-solid fa-minus"></i></button>
+                        <button onclick="multpPlay()"><i class="fa-solid fa-xmark"></i></button>
+                        <button onclick="divdPlay()"><i class="fa-solid fa-divide"></i></button>
+                    </div>
+                    <h3>Result is :</h3>
+                    <h1 id="lastVal" class="result">_ _ _ _</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

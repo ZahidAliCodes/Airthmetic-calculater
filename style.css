@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+.container{
+    margin: 0 auto;
+   
+}
+.content{
+   width: 100%;
+   height: 675px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: #EDAE49;
+   margin: 0 auto;
+}
+.content-inner{
+    
+    background-color: white;
+    border-radius: 20px;
+    padding: 50px 50px;
+    height: 400px;
+}
+.content-inner input{
+    padding: 15px 10px 15px 40px;
+    width: 350px;
+    outline: none;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    border: 2px solid #BFBFBF;
+    
+}
+form i {
+    padding-left: 15px;
+    font-size: 24px;
+    color: #BFBFBF;
+    position: absolute;
+    margin-top: -40px;
+}
+.content-inner input:focus ~ i{
+    color: #066AAB;
+}
+.content-inner input:focus{
+    border: 2px solid #066AAB;
+}
+h2{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 5px;
+}
+h3{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 50px;
+    color:#066AAB;
+}
+/* .result{
+    color: #BE8B3A;
+} */
+.button{
+    display: flex;
+    justify-content: space-between;
+}
+.button button{
+    /* width: 50px; */
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #EDAE49;
+    border:1px solid #EDAE49;
+    color: #ffff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.button button:hover{
+    background-color: #BE8B3A;
+}
+h1{
+    font-size: 52px;
+    margin-top: 10px;
+    color: #EDAE49;
+}
+@media only screen and (min-width: 600px) {
+    .content{
+        width: 100%;
+        flex-direction: column; 
+    }
+    .content-inner{
+        font-size: 10px;
+        flex-direction: column;
+    }
+    
+    }
